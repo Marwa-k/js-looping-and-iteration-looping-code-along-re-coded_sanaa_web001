@@ -3,11 +3,12 @@ const names= [];
 const event='';
 function writeCards(name,event)
 {
+   let thanksMessage =[]
    for(let i=0;i<name.length;i++)
    {
-     console.log(`Thank you, ${name[i]}, for the wonderful ${event} gift!`);
+     thanksMessage.push(`Thank you, ${name[i]}, for the wonderful ${event} gift!`);
    }
-   return names;
+   return  thanksMessage;
 }
  writeCards( ['Lisa','Kaitlin','Jan'], 'surprise' ) ;
  var num;
